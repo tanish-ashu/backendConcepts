@@ -23,7 +23,6 @@ app.post('/notes', (req,res) =>{
 })
 
 // GET /notes
-
 app.get('/notes', (req, res) =>{
   
   res.status(200).json({
