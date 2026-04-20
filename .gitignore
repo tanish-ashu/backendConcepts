@@ -1,0 +1,11 @@
+# Ignore all node_modules folders in this repository
+**/node_modules/
+
+# Ignore environment files and logs
+.env
+npm-debug.log*
+yarn-debug.log*
+
+# Ignore OS/editor temporary files
+.DS_Store
+Thumbs.db
