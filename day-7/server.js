@@ -1,14 +1,10 @@
-// importing server 
+// importing server and connecting db code 
 const app = require("./src/app.js")
-const mongoose = require("mongoose")
+const connectToDb = require("./src/config/database.js")
+const nodeModule = require("./src/models/notes.model.js")
 
 // connecting to db with code 
-async function connectToDb(){
-  await mongoose.connect("mongodb+srv://tanishk:Zf5CM6PDxIsDtkj8@cluster0.5witldt.mongodb.net/day-7")
-  .then( ()=>{
-    console.log("connected to db")
-  })
-}
+
 
 connectToDb()
 
