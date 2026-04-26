@@ -1,9 +1,9 @@
 const express = require("express")
-const nodeModule = require("./src/models/notes.model.js")
+const noteModel = require("./models/notes.model")
 
 const app = express()
 
-app.use(express.json)
+app.use(express.json())
 
 // POST /notes
 app.post("/notes", async (req, res) =>{
