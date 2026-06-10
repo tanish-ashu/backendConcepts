@@ -1,3 +1,4 @@
+require("dotenv").config()
 // importing server and connecting db code 
 const app = require("./src/app.js")
 const connectToDb = require("./src/config/database.js")

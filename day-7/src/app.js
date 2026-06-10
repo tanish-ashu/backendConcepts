@@ -13,12 +13,21 @@ app.post("/notes", async (req, res) =>{
     title,description
   })
   
-  res.status(201).json({
+  res.status(201).json({                        // 201 new resource created
     message: "Note created successfully",
     note
   })
 
 })
 
+app.get("/notes", async (req,res) =>{
+  const notes = await noteModel.find()         //  find method , reads all the notes data and returns ( always returns data in array of object format)
+   
+  res.status(200).json({
+    message: "Notes Fetched Successfully",
+    notes
+  })
+})
 
+ 
 module.exports = app
