@@ -1,0 +1,16 @@
+.notes{
+  display: flex;
+  gap: 1rem;
+
+  padding-block: 1rem;
+  padding-inline: 3rem;
+}
+
+
+.note{
+  background-color: rgb(167, 162, 162);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.7rem;
+  max-width: 20rem;
+}
